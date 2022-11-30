@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kosmos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styl3.css">
+  <link rel="shortcut icon" href="media/favicon.png" type="image/x-icon">
+  <script>
+    function rysuj_logo() {
+      const c = document.getElementById('logo-canvas')
+
+      const p = c.getContext('2d')
+
+      p.beginPath()
+      p.arc(100, 100, 70, 0, 2*Math.PI)
+      p.fillStyle = "white"
+      p.fill()
+      p.stroke()
+
+      p.beginPath()
+      p.moveTo(100, 60)
+      p.lineTo(120, 140)
+      p.lineTo(80, 140)
+      p.lineTo(100, 60)
+      p.fillStyle = "black"
+      p.fill()
+      p.stroke()
+    }
+  </script>
+</head>
+<body onload="rysuj_logo()">
+  <header>
+    <!-- ile bloków -->
+    <div id="logo">
+      <canvas 
+        id="logo-canvas"
+        width="200px"
+        height="200px"
+        >  
+      </canvas>
+    </div>
+    <div id="nazwa">
+      <h1>Kosmos</h1>
+    </div>
+    <div id="media">
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-tiktok"></i>
+      <i class="fa-brands fa-steam"></i>
+    </div>
+  </header>
+  <article class="art art-lewy">
+    <h1>Mars</h1>
+    <table>
+      <tr>
+        <td>Promień:</td>
+        <td>3389,5</td>
+      </tr>
+      <tr>
+        <td>Odległość:</td>
+        <td>1,542 AU</td>
+      </tr>
+      <tr>
+        <td>Populacja:</td>
+        <td>38,180</td>
+      </tr>
+      <tr>
+        <td>Czas obrotu:</td>
+        <td>24h39m25s</td>
+      </tr>
+    </table>
+      
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam saepe tempore aperiam neque aliquid asperiores, corrupti, eius itaque assumenda ipsa quisquam reiciendis et rem voluptatibus odit nihil, a iste vitae.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam saepe tempore aperiam neque aliquid asperiores, corrupti, eius itaque assumenda ipsa quisquam reiciendis et rem voluptatibus odit nihil, a iste vitae.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam saepe tempore aperiam neque aliquid asperiores, corrupti, eius itaque assumenda ipsa quisquam reiciendis et rem voluptatibus odit nihil, a iste vitae.</p>
+    
+      <a href="#">Więcej</a>
+    <img src="media/mars-web.jpeg">
+  </article>
+  <article class="art art-prawy">
+    <h1>Jowisz</h1>
+    <img src="media/jowisz.jpg">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sed fugiat repellendus assumenda recusandae illo, est officiis magnam nla et perferendis veniam vero aspernatur quaerat. Neque iusto molestiae laboriosam ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam saepe tempore aperiam neque aliquid asperiores, corrupti, eius itaque assumenda ipsa quisquam reiciendis et rem voluptatibus odit nihil, a iste vitae.</p>
+    <a href="#">Więcej</a>  
+  </article>
+  <article class="art art-lewy">
+    <h1>Otchłań</h1>
+    <img src="media/void-web.png">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sed fugiat repellendus assumenda recusandae illo, est officiis magnam nla et perferendis veniam vero aspernatur quaerat. Neque iusto molestiae laboriosam ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam saepe tempore aperiam neque aliquid asperiores, corrupti, eius itaque assumenda ipsa quisquam reiciendis et rem voluptatibus odit nihil, a iste vitae.</p>
+    <a href="void.html">Więcej</a>  
+  </article>
+  <footer>
+    <ul>
+      <li>O nas</li>
+      <li>Coś1</li>
+      <li>Coś2</li>
+      <li>Coś3</li>
+    </ul>
+    <ul>
+      <li>Kariera</li>
+      <li>Podawacz kawy</li>
+      <li>Student debil na umowe zlecenie</li>
+      <li>COBOL Senior Developer</li>
+    </ul>
+    <ul>
+      <li>Kontakt</li>
+      <li>Marszałkowska 5</li>
+      <li>48-300</li>
+      <li>Wodogrzmoty</li>
+    </ul>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,144 @@
+html {
+  background-image: url('media/tło.jpeg');
+  margin: 0;
+}
+
+
+
+/* === HEADER === */
+header {
+  background-color: wheat;
+  display: grid;
+
+  grid-template-columns: 25% 50% 25%;
+}
+header i {
+  font-size: 50px;
+}
+header h1 {
+  font-size: 75px;
+}
+header i:hover {
+  scale: 1.1;
+}
+header i[class *="instagram"]:hover { 
+  background: -webkit-linear-gradient(#405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040,  #F77737, #FCAF45, #FFDC80);
+  background-clip: text; 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+header i[class *="steam"]:hover { color: #1b2838; }
+header i[class *="facebook"]:hover { color: #4267B2}
+#media {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+/* === TABLE === */
+table, td {
+  border: 1px solid #2e4868;
+}
+table tr > td:nth-of-type(1) {
+  font-weight: bold;
+}
+
+
+
+/* === ART === */
+.art {
+  background-color:#1b2838;
+  border-radius: 2%;
+  width: 80%;
+  margin: 5% auto;
+  box-shadow: 0px 0px 15px white;
+  display: grid;
+  padding: 20px;
+  column-gap: 20px;
+}
+.art h1, p, a, table{
+  color: white;
+  font-size: 20px;
+}
+.art a {
+  padding: 8px;
+  text-decoration: none;
+  text-align: center;
+  grid-area: href;
+
+}
+.art h1{
+  grid-area: nazwa;
+  text-align: center;
+  /* border: 1px solid white; */
+  font-size: 50px;
+  padding: 10px;
+}
+.art table {
+  grid-area: table;
+  min-width: 300px;
+  text-align: center;
+}
+.art img {
+  grid-area: img;
+}
+
+.art > p {
+  box-shadow: 0px 0px 20px#2e4868;
+  padding: 20px;
+}
+.art > p:nth-child(1) {
+  grid-area: p1; 
+}
+.art > p:nth-child(2) { 
+  grid-area: p2; 
+}
+.art > p:nth-child(3) { 
+  grid-area: p3; 
+  text-align: center;
+}
+
+
+
+
+
+/*  === GRID-AREAS ARTÓW === */
+.art-prawy {
+  grid-template-areas: 
+  'nazwa nazwa nazwa'
+  'p1    table img'
+  'p1    table img'
+  'p2    table href'
+  'p3    p3    p3';
+}
+.art-lewy {
+  grid-template-areas: 
+  'nazwa  nazwa  nazwa'
+  'img    table  p1'
+  'img    table  p1'
+  'href   table  p2'
+  'p3     p3     p3';
+  ;
+}
+
+
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  background-color: #171a21;
+}
+footer ul {
+  color: white;
+  padding: 20px;
+}
+footer ul li:first-child {
+  font-size: 50px;
+  list-style-type: none;
+  
+}
+
+
